@@ -1,0 +1,115 @@
+.footer{
+    width: 1110px;
+    min-height: 320px;
+    border-radius: 10px;
+    background-color: var(--Black, #030303);
+    margin: 0px auto 56px auto;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 540px 228px;
+    column-gap: 182px;
+    row-gap: 25px;
+    padding: 40px 65px;
+}
+
+.footer > h1{
+    color: var(--Light-Cream, #FFF7F0);
+    font-family: var(--font);
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.footer > p{
+    color: var(--Light-Cream, #FFF7F0);
+    font-family: var(--font);
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; /* 155.556% */
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin: 0px;
+}
+
+.footer > button{
+    width: 228px;
+    height: 56px;
+    grid-column: 2/3;
+    grid-row: 1/3;
+    border-radius: 28px;
+    border: none;
+    background-color: var(---Light-Red, #EB7565);
+    color: #FFF7F0;
+    font-family: var(--font);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    cursor: pointer;
+    line-height: 28px; /* 175% */
+    align-self: center;
+}
+
+.footer > button:hover{
+    background-color: #F6A560;
+}
+
+@media(max-width: 1160px){
+    .footer{
+        width: 90%;
+        grid-template-columns: 1fr 228px;
+        column-gap: 120px;
+    }
+
+}
+
+
+@media(max-width: 800px){
+    .footer{
+        grid-template-columns: 1fr;
+        padding: 56px 75px;
+        justify-items: center;
+        row-gap: 26px;
+    }
+
+    .footer > h1{
+        font-size: 2rem;
+    }
+
+    .footer > p{
+        text-align: center;
+    }
+
+    .footer > button{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+}
+
+@media(max-width: 640px){
+    .footer{
+        row-gap: 24px;
+        padding: 49px 24px;
+        margin: 0px auto 40px auto;
+    }
+
+    .footer > h1{
+        font-size: 1.625rem;
+    }
+
+    .footer > p{
+        font-size: 1rem;
+        line-height: 26px;
+    }
+
+    .footer > button{
+        width: 176px;
+        height: 44px;
+        font-size: 0.875rem;
+    }
+}

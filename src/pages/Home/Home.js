@@ -3,6 +3,8 @@ import HeaderBar from './HeaderBar';
 import Introduction from './Introduction';
 import Skills from './Skills';
 import Author from './Author';
+import ImageCarousel from './ImageCarousel';
+import Footer from './Footer'
 
 function Home() {
     return(
@@ -11,6 +13,8 @@ function Home() {
             <Introduction/>
             <Skills/>
             <Author/>
+            <ImageCarousel/>
+            <Footer/>
         </>
     )
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import HeaderBar from './HeaderBar';
+import HeaderBar from '~/Components/HeaderBar';
 import Introduction from './Introduction';
 import Skills from './Skills';
 import Author from './Author';

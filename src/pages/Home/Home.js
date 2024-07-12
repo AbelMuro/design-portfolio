@@ -15,6 +15,7 @@ function Home() {
             <Author/>
             <ImageCarousel/>
             <Footer/>
+            <HeaderBar/>
         </>
     )
 }
